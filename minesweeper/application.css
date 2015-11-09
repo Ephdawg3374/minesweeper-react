@@ -1,0 +1,77 @@
+html, body, h1, div, ul, li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  font: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#minesweeper {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  background: lightgrey;
+}
+
+.row {
+  margin: auto;
+  width: 100%;
+}
+
+.tile {
+  border-width: 3px;
+  border-style: outset;
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tile p {
+  margin: auto;
+}
+
+.tile:hover {
+  border-color: red;
+}
+
+.bombed {
+  background: red;
+}
+
+.flagged {
+  background: lightblue;
+}
+
+.explored {
+  border-style: inset;
+  background: grey;
+}

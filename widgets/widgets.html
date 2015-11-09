@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
+    <script src="./auto_complete.js" type="text/jsx"></script>
+    <script src="./clock.js" type="text/jsx"></script>
+    <script src="./weather.js" type="text/jsx"></script>
+    <script src="./tabs.js" type="text/jsx"></script>
+  </head>
+  <body>
+
+    <h1>React Demo</h1>
+    <div id="auto-complete"></div>
+    <div id="clock"></div>
+    <div id="weather"></div>
+    <div id="tabs"></div>
+
+    <script type="text/jsx">
+      React.render(<AutoComplete namesList={["Ephraim", "Ryan", "Tommy"]} />,
+            document.getElementById('auto-complete'));
+
+      React.render(<Clock />, document.getElementById('clock'));
+
+      React.render(<Weather />, document.getElementById('weather'));
+
+      React.render(<Tabs
+                      titles={["Tab1", "Tab2", "Tab3"]}
+                      content={["Tab1 content", "Tab2 content", "Tab3 content"]} />,
+                      document.getElementById('tabs'));
+   </script>
+  </body>
+</html>
